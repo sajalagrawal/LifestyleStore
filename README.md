@@ -1,5 +1,5 @@
 # LifestyleStore
-An online Shopping website developed using Html, CSS, Bootstrap, MySQL, PHP.
+An Online Shopping website developed using Html, CSS, Bootstrap, MySQL, PHP.
 
 Features
 --------
