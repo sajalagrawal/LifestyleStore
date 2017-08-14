@@ -12,7 +12,7 @@ Running the project
 
 * Install WAMP
 * Import database from store.sql file.
-* Run WAMP and open web page from browser: http://localhost/LifeStyleStore/index.php
+* Run WAMP and open web page from browser: http://localhost/LifestyleStore/index.php
 
 Project Developer
 ----------------
