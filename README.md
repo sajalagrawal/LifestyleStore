@@ -1,5 +1,6 @@
 # LifestyleStore
 An Online Shopping website developed using Html, CSS, Bootstrap, MySQL, PHP.
+http://lifestore.000webhostapp.com/
 
 Features
 --------
