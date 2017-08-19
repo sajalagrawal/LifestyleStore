@@ -26,6 +26,7 @@
             <?php
                 require 'header.php';
             ?>
+            <br>
             <div class="container">
                 <div class="row">
                     <div class="col-xs-4 col-xs-offset-4">
@@ -47,7 +48,8 @@
                     </div>
                 </div>
             </div>
-           <footer class="foot">
+            <br><br><br><br><br>
+           <footer class="footer">
                <div class="container">
                <center>
                    <p>Copyright &copy Lifestyle Store. All Rights Reserved. | Contact Us: +91 90000 00000</p>
