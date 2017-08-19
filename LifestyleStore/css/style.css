@@ -31,8 +31,14 @@ footer{
     bottom:0;
 }
 
-.foot{
-    position:fixed;
-    width:100%;
-    bottom:0;
+html { 
+    min-height:100%;
+    position:relative;    
+} 
+
+.footer { 
+    position: absolute; 
+    bottom:0; 
+    right:0;
+    left:0;
 }
