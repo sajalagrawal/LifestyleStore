@@ -42,8 +42,8 @@ session_start();
                            </a>
                            <center>
                                 <div class="caption">
-                                         <h3>Cameras</h3>
-                                         <p>Choose among the best available in the world.</p>
+                                        <p id="autoResize">Cameras</p>
+                                        <p>Choose among the best available in the world.</p>
                                 </div>
                            </center>
                        </div>
@@ -55,7 +55,7 @@ session_start();
                            </a>
                            <center>
                                 <div class="caption">
-                                    <h3>Watches</h3>
+                                    <p id="autoResize">Watches</p>
                                     <p>Original watches from the best brands.</p>
                                 </div>
                            </center>
@@ -68,7 +68,7 @@ session_start();
                            </a>
                            <center>
                                <div class="caption">
-                                   <h3>Shirts</h3>
+                                   <p id="autoResize">Shirts</p>
                                    <p>Our exquisite collection of shirts.</p>
                                </div>
                            </center>
