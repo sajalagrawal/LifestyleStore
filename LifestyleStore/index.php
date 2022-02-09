@@ -26,7 +26,7 @@ session_start();
                <div class="container">
                    <center>
                    <div id="bannerContent">
-                       <h1>We sell lifestyle.</h1>
+                       <h1>We sell World Kurdish/جیهانی کوردی .</h1>
                        <p>Flat 40% OFF on all premium brands.</p>
                        <a href="products.php" class="btn btn-danger">Shop Now</a>
                    </div>
@@ -81,7 +81,7 @@ session_start();
                <div class="container">
                <center>
                    <p>Copyright &copy Lifestyle Store. All Rights Reserved. | Contact Us: +91 90000 00000</p>
-                   <p>This website is developed by Sajal Agrawal</p>
+                   <p>This website is developed by Mala</p>
                </center>
                </div>
            </footer>
