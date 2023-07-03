@@ -37,12 +37,12 @@
         //die($user_registration_query);
         $user_registration_result=mysqli_query($con,$user_registration_query) or die(mysqli_error($con));
         echo "User successfully registered";
-        $_SESSION['email']=$email;
+        //$_SESSION['email']=$email;
         //The mysqli_insert_id() function returns the id (generated with AUTO_INCREMENT) used in the last query.
         $_SESSION['id']=mysqli_insert_id($con); 
         //header('location: products.php');  //for redirecting
         ?>
-        <meta http-equiv="refresh" content="3;url=products.php" />
+        <meta http-equiv="refresh" content="3;url=login.php" />
         <?php
     }
     

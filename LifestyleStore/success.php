@@ -38,7 +38,7 @@
                         <div class="panel panel-primary">
                             <div class="panel-heading"></div>
                             <div class="panel-body">
-                                <p>Your order is confirmed. Thank you for shopping with us. <a href="products.php">Click here</a> to purchase any other item.</p>
+                                <p>Dear <b> <?php echo $_SESSION['name'] ?></b>, Your order is confirmed. Thank you for shopping with us. <a href="products.php">Click here</a> to purchase any other item.</p>
                             </div>
                         </div>
                     </div>
