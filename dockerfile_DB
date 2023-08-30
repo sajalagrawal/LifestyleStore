@@ -2,9 +2,9 @@
 FROM mysql:latest
 
 # Set environment variables for MySQL configuration
-ENV MYSQL_ROOT_PASSWORD=password
-ENV MYSQL_DATABASE=store
-ENV MYSQL_USER=store
-ENV MYSQL_PASSWORD=password
+# ENV MYSQL_ROOT_PASSWORD=password
+# ENV MYSQL_DATABASE=store
+# ENV MYSQL_USER=store
+# ENV MYSQL_PASSWORD=password
 # Copy data
 COPY database/store.sql /docker-entrypoint-initdb.d/
