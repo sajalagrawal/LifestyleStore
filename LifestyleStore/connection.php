@@ -1,8 +1,8 @@
 <?php
-$host = 'mysql'; // Replace with MySQL host
-$dbname = 'store'; // Replace with db name
-$user = 'root'; // Replace with db username
-$password = 'password'; // Replace with db password
+$host = getenv('MYSQL_HOST'); // Replace with MySQL host
+$dbname = getenv('MYSQL_DATABASE');  // Replace with db name
+$user = getenv('MYSQL_USER'); 
+$password = getenv('MYSQL_PASSWORD'); 
 
 try {
     $con = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);

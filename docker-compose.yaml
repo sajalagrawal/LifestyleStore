@@ -1,17 +1,10 @@
-networks:
-  store:
-    name: store
-
-
+version: '3'
 services:
-  mysql:
+  mysql: #name of service
     image: mysql-storedb:latest
     container_name: store_db
-    environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: store
-      MYSQL_USER: store
-      MYSQL_PASSWORD: password
+    env_file:
+      - 'variables.env'
     ports:
       - "3306:3306"  
     networks:
@@ -27,10 +20,23 @@ services:
     container_name: store
     ports:
       - "8080:80"
+    env_file:
+      - 'variables.env' 
     networks:
       - store
     deploy:
       resources:
         limits:
           cpus: '0.2'
-          memory: 64M   
+          memory: 64M 
+
+networks:
+  store:
+    name: store
+
+x-variables: &variables
+  MYSQL_ROOT_PASSWORD: password
+  MYSQL_DATABASE: store
+  MYSQL_USER: store
+  MYSQL_PASSWORD: password
+  MYSQL_HOST: mysql #name of service
