@@ -1,5 +1,6 @@
 networks:
   store:
+    name: store
 
 
 services:
@@ -11,8 +12,15 @@ services:
       MYSQL_DATABASE: store
       MYSQL_USER: store
       MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"  
     networks:
       - store
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M 
 
   php:
     image: php-lifestylestore:latest 
@@ -21,3 +29,8 @@ services:
       - "8080:80"
     networks:
       - store
+    deploy:
+      resources:
+        limits:
+          cpus: '0.2'
+          memory: 64M   
