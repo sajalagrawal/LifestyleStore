@@ -1,8 +1,11 @@
 # Use an official PHP image as the base image
 FROM php:apache
 
-# Set the working directory within the container
+# Enable PDO MySQL driver
+RUN docker-php-ext-install pdo pdo_mysql
 WORKDIR /var/www/html
+
+RUN docker-php-ext-install pdo pdo_mysql
 
 # Copy the entire PHP project into the container
 COPY lifestyleStore/ .
