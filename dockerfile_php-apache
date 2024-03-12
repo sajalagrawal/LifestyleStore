@@ -1,0 +1,14 @@
+# Use an official PHP image as the base image
+FROM php:apache
+
+# Enable PDO MySQL driver
+RUN docker-php-ext-install pdo pdo_mysql
+WORKDIR /var/www/html
+
+RUN docker-php-ext-install pdo pdo_mysql
+
+# Copy the entire PHP project into the container
+COPY lifestyleStore/ .
+
+# Expose port 80 for the Apache web server
+EXPOSE 80

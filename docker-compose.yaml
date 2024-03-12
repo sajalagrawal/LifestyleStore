@@ -1,0 +1,42 @@
+version: '3'
+services:
+  mysql: #name of service
+    image: mysql-storedb:latest
+    container_name: store_db
+    env_file:
+      - 'variables.env'
+    ports:
+      - "3306:3306"  
+    networks:
+      - store
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M 
+
+  php:
+    image: php-lifestylestore:latest 
+    container_name: store
+    ports:
+      - "8080:80"
+    env_file:
+      - 'variables.env' 
+    networks:
+      - store
+    deploy:
+      resources:
+        limits:
+          cpus: '0.2'
+          memory: 64M 
+
+networks:
+  store:
+    name: store
+
+x-variables: &variables
+  MYSQL_ROOT_PASSWORD: password
+  MYSQL_DATABASE: store
+  MYSQL_USER: store
+  MYSQL_PASSWORD: password
+  MYSQL_HOST: mysql #name of service
